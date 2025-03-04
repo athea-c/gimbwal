@@ -9,15 +9,15 @@ window.addEventListener('load', () => {
 const messages = [
     {
         text: "di relationship ini rasanya aku excited sendirian ya",
-        image: "https://pin.it/5583qpjSh"
+        image: "blob:https://id.pinterest.com/950dd9db-d9b5-4f77-8b6b-9f8474aa7960"
     },
     {
         text: "CARI MATERI DONG WOI,UDAH BERAPA KALI KU INGETIN",
-        image: "https://pin.it/5epjM4WoP"
+        image: "blob:https://id.pinterest.com/1ec0ca7a-d0a1-4ec8-ba93-411746567139"
     },
     {
         text: "terakhir, kalo \"no\" yauda deh",
-        image: "https://pin.it/6uN3nGcIS"
+        image: "blob:https://id.pinterest.com/1ec0ca7a-d0a1-4ec8-ba93-411746567139"
     }
 ];
 
@@ -122,7 +122,7 @@ function getFarPosition(containerRect, windowWidth, windowHeight, buttonWidth, b
 
 yesBtn.addEventListener('click', () => {
     title.innerHTML = "tega ga tega tapi sayangnya aku tegaan";
-    document.querySelector('img').src = "https://pin.it/2eHH77ppw";
+    document.querySelector('img').src = "blob:blob:https://id.pinterest.com/34a7ea67-b4b6-45e8-aea1-4fcda6054307";
     noBtn.style.display = 'none';
     yesBtn.style.display = 'none';
     bgMusic.play();
