@@ -21,14 +21,14 @@ const messages = [
     }
 ];
 
-function createSmile() {
-    const smile = document.createElement('div');
-    smile.className = 'smile';
-    smile.innerHTML = '😊';
-    smile.style.left = Math.random() * 100 + 'vw';
-    smile.style.animationDuration = Math.random() * 3 + 2 + 's';
-    document.body.appendChild(smile);
-    setTimeout(() => smile.remove(), 5000);
+function createHeart() {
+    const heart = document.createElement('div');
+    heart.className = 'smile';
+    heart.innerHTML = '❤';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = Math.random() * 3 + 2 + 's';
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 5000);
 }
 
 setInterval(() => createHeart(), 300);
