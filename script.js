@@ -8,27 +8,27 @@ window.addEventListener('load', () => {
 
 const messages = [
     {
-        text: "plss mau dong",
-        image: "https://i.pinimg.com/736x/1e/7c/6f/1e7c6ff7a0c26f7eaefbce683656193d.jpg"
+        text: "di relationship ini rasanya aku excited sendirian ya",
+        image: "https://pin.it/5583qpjSh"
     },
     {
-        text: "pls klik yg kiri",
-        image: "https://i.pinimg.com/736x/90/73/a9/9073a9359bff531cd830ae7384752934.jpg"
+        text: "CARI MATERI DONG WOI,UDAH BERAPA KALI KU INGETIN",
+        image: "https://pin.it/5epjM4WoP"
     },
     {
         text: "terakhir, kalo \"no\" yauda deh",
-        image: "https://i.pinimg.com/736x/a6/43/f5/a643f5a40db387585b56bc767b66fddb.jpg"
+        image: "https://pin.it/6uN3nGcIS"
     }
 ];
 
-function createHeart() {
-    const heart = document.createElement('div');
-    heart.className = 'heart';
-    heart.innerHTML = '❤';
-    heart.style.left = Math.random() * 100 + 'vw';
-    heart.style.animationDuration = Math.random() * 3 + 2 + 's';
-    document.body.appendChild(heart);
-    setTimeout(() => heart.remove(), 5000);
+function createSmile() {
+    const smile = document.createElement('div');
+    smile.className = 'smile';
+    smile.innerHTML = '😊';
+    smile.style.left = Math.random() * 100 + 'vw';
+    smile.style.animationDuration = Math.random() * 3 + 2 + 's';
+    document.body.appendChild(smile);
+    setTimeout(() => smile.remove(), 5000);
 }
 
 setInterval(() => createHeart(), 300);
@@ -121,8 +121,8 @@ function getFarPosition(containerRect, windowWidth, windowHeight, buttonWidth, b
 }
 
 yesBtn.addEventListener('click', () => {
-    title.innerHTML = "HORE!! i knew you would say vqsghvwegdsbjs";
-    document.querySelector('img').src = "https://media.tenor.com/gUiu1zyxfzYAAAAi/good-night-kiss-kiss.gif";
+    title.innerHTML = "tega ga tega tapi sayangnya aku tegaan";
+    document.querySelector('img').src = "https://pin.it/2eHH77ppw";
     noBtn.style.display = 'none';
     yesBtn.style.display = 'none';
     bgMusic.play();
@@ -134,7 +134,7 @@ noBtn.addEventListener('click', () => {
         title.innerHTML = messages[noCount - 1].text;
         document.querySelector('img').src = messages[noCount - 1].image;
     } else {
-        title.innerHTML = "TAPI BOONG HEHEHE";
+        title.innerHTML = "NGAREP YE, KERJA WOI ENAK AJE";
         if (!noBtn.classList.contains('running')) {
             noBtn.classList.add('running');
         }
